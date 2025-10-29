@@ -5,6 +5,27 @@ using System;
 using System.Threading;
 using Tests; 
 
+/*
+ * ===================================================================================
+ * RAPPORTAGE OVERZICHT (HS-1.2 Validatie Voorschrift)
+ * ===================================================================================
+ * Dit testbestand valideert de kernfunctionaliteit en validatieregels 
+ * van het 'Nieuw Voorschrift' formulier voor een Specialist 
+ * (Acceptance Criteria HS-1.2).
+ *
+ * Wat wordt gerapporteerd:
+ *
+ * 1. HS_1_2_1_CreateSuccessfulWithAllFields (Happy Path):
+ * - Rapporteert of een Specialist een volledig en correct ingevuld 
+ * voorschrift (incl. medicijn, dosering, instructies) succesvol 
+ * kan aanmaken.
+ *
+ * 2. HS_1_2_2_SaveBlockedByQuantityValidationError (Unhappy Path):
+ * - Rapporteert of het systeem de Specialist correct **blokkeert** * (en een foutmelding toont) wanneer het 'Quantity' (Dosering) veld 
+ * leeg wordt gelaten. Dit is een cruciale veiligheidscheck.
+ * ===================================================================================
+ */
+
 namespace Tests.Specialist
 {
     [TestFixture]
@@ -99,15 +120,15 @@ namespace Tests.Specialist
         
         
         // ------------------------------------------------------------------
-        // --- TC HS-1.1.1: HAPPY PATH (Volledige Flow) ---
+        // --- TC HS-1.2.1: HAPPY PATH (Volledige Flow) ---
         // ------------------------------------------------------------------
 
         [Test]
         [Category("Happy Path")]
-        [Category("HS-1.1")]
+        [Category("HS-1.2")]
         public void HS_1_1_1_CreateSuccessfulWithAllFields()
         {
-            log.Info("=== Starting HS-1.1.1: Voorschrift succesvol aangemaakt (volledige flow) ===");
+            log.Info("=== Starting HS-1.2.1: Voorschrift succesvol aangemaakt (volledige flow) ===");
 
             // Arrange
             string username = Username;
@@ -150,12 +171,12 @@ namespace Tests.Specialist
                 _wait.Until(d => d.Url.Contains("/Prescriptions") && !d.Url.Contains("/Prescriptions/new"));
 
                 log.Info("✓ Assertion passed: Succesvolle navigatie na het aanmaken van het voorschrift.");
-                log.Info("=== HS-1.1.1 PASSED: Voorschrift succesvol aangemaakt ===");
+                log.Info("=== HS-1.2.1 PASSED: Voorschrift succesvol aangemaakt ===");
             }
             catch (Exception ex)
             {
-                log.Error($"HS-1.1.1 FAILED: {ex.Message}");
-                TakeScreenshot("HS_1_1_1_Failed");
+                log.Error($"HS-1.2.1 FAILED: {ex.Message}");
+                TakeScreenshot("HS_1_2_1_Failed");
                 throw;
             }
         }

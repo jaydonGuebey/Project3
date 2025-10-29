@@ -5,6 +5,27 @@ using System;
 using System.Threading;
 using Tests;
 
+/*
+ * ===================================================================================
+ * RAPPORTAGE OVERZICHT (HS-1.4 Datum Validatie)
+ * ===================================================================================
+ * Dit testbestand valideert de logische datumvalidatie op het 
+ * voorschriftformulier (Acceptance Criteria HS-1.4).
+ *
+ * Wat wordt gerapporteerd:
+ *
+ * 1. HS_1_4_1_CreateSuccessfulWithValidDates (Happy Path):
+ * - Rapporteert of het opslaan slaagt als de Stopdatum (vandaag+7) 
+ * na de Startdatum (vandaag) ligt.
+ *
+ * 2. HS_1_4_2_SaveBlockedByInvalidEndDate (Unhappy Path):
+ * - Rapporteert of het systeem de Specialist **blokkeert** als de 
+ * Stopdatum (gisteren) vóór de Startdatum (vandaag) ligt.
+ * - Valideert dat de correcte Engelse foutmelding 
+ * ("end date must be... start date") wordt getoond.
+ * ===================================================================================
+ */
+
 namespace Tests.Specialist
 {
     [TestFixture]

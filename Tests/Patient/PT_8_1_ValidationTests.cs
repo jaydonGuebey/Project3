@@ -3,6 +3,30 @@ using OpenQA.Selenium;
 using System;
 using Tests; // <-- BELANGRIJK: Zorgt dat deze klasse de BaseTest kan vinden
 
+/*
+ * ===================================================================================
+ * RAPPORTAGE OVERZICHT (PT-8.1 Login Validatie & Security)
+ * ===================================================================================
+ * Dit testbestand valideert de robuustheid en veiligheid van het 
+ * inlogscherm (Acceptance Criteria PT-8.1).
+ *
+ * Wat wordt gerapporteerd:
+ *
+ * 1. PT_8_1_1 (Happy Path):
+ * - Rapporteert of een bekende patiënt ('patient'/'Patient1') 
+ * succesvol kan inloggen.
+ *
+ * 2. PT_8_1_2 (Unhappy Path - Security):
+ * - Rapporteert of een simpele SQL Injectie poging (' OR '1'='1') 
+ * correct wordt geblokkeerd en resulteert in een foutmelding 
+ * (en geen crash).
+ *
+ * 3. PT_8_1_3 & 4 (Unhappy Path - Validatie):
+ * - Rapporteert of de HTML5 'required' validatie correct wordt 
+ * getoond wanneer de gebruikersnaam of het wachtwoord leeg is.
+ * ===================================================================================
+ */
+
 namespace Tests.Patient
 {
     [TestFixture]
@@ -65,7 +89,7 @@ namespace Tests.Patient
             string sqlInjection = "' OR '1'='1";
             string password = "password";
             log.Info($"Test data - SQL Injection attempt: {sqlInjection}");
-            
+
             try
             {
                 // Act
@@ -80,7 +104,7 @@ namespace Tests.Patient
                 // We VERWACHTEN een foutmelding. Als we die vinden, is de test GESLAAGD.
                 var errorElement = FindWithWait(By.Id("login-error"));
                 log.Info("✓ System did not crash and error element was found.");
-                
+
                 Assert.That(errorElement.Displayed, Is.True,
                     "Expected: Een foutmelding moet zichtbaar zijn");
                 Assert.That(_driver.Url, Does.Contain("loginError"),
@@ -126,12 +150,12 @@ namespace Tests.Patient
                 var passwordField = FindWithWait(By.Name("Password"));
                 string? validationMessage = passwordField.GetAttribute("validationMessage");
 
-                Assert.That(string.IsNullOrEmpty(validationMessage), Is.False, 
+                Assert.That(string.IsNullOrEmpty(validationMessage), Is.False,
                     "Expected: HTML5 validation message should be shown for empty password.");
                 log.Info($"✓ Assertion passed: Validation message found: {validationMessage}");
 
                 // We controleren ook dat we de pagina niet verlaten hebben
-                Assert.That(_driver.Url, Does.Contain(_baseUrl), 
+                Assert.That(_driver.Url, Does.Contain(_baseUrl),
                     "Expected: Driver should still be on the login page.");
                 log.Info("✓ Assertion passed: System did not navigate away.");
 
@@ -174,12 +198,12 @@ namespace Tests.Patient
                 var usernameField = FindWithWait(By.Name("Username"));
                 string? validationMessage = usernameField.GetAttribute("validationMessage");
 
-                Assert.That(string.IsNullOrEmpty(validationMessage), Is.False, 
+                Assert.That(string.IsNullOrEmpty(validationMessage), Is.False,
                     "Expected: HTML5 validation message should be shown for empty username.");
                 log.Info($"✓ Assertion passed: Validation message found: {validationMessage}");
 
                 // We controleren ook dat we de pagina niet verlaten hebben
-                Assert.That(_driver.Url, Does.Contain(_baseUrl), 
+                Assert.That(_driver.Url, Does.Contain(_baseUrl),
                     "Expected: Driver should still be on the login page.");
                 log.Info("✓ Assertion passed: System did not navigate away.");
 

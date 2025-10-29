@@ -6,13 +6,39 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using log4net;
 using System.Threading;
+
+/*
+ * ===================================================================================
+ * RAPPORTAGE OVERZICHT (BaseTest - Fundament van het Framework)
+ * ===================================================================================
+ * Dit bestand dient als het technische FUNDAMENT van de E2E-testarchitectuur.
+ * Het definieert de basisvereisten voor het uitvoeren van elke individuele test.
+ *
+ * Wat wordt gerapporteerd:
+ *
+ * 1. Stabiliteit (`FindWithWait`): Dit is de belangrijkste bijdrage. De methode 
+ * `FindWithWait(By by)` dwingt Selenium om te wachten tot elementen zichtbaar/interactief zijn 
+ * (10 seconden), waardoor onbetrouwbare (flaky) tests als gevolg van timingproblemen 
+ * worden geminimaliseerd.
+ *
+ * 2. Driver Lifecycle: Beheert de volledige levenscyclus van de browser: 
+ * `[SetUp]` start een nieuwe Chrome-sessie (standaard headless) en `[TearDown]` 
+ * sluit de browser correct na ELKE test (`_driver.Quit()`).
+ *
+ * 3. Foutafhandeling (`TakeScreenshot`): De methode zorgt ervoor dat bij elke 
+ * testfout een visueel artefact (screenshot) wordt vastgelegd voor snelle debugging.
+ * * 4. Core Helpers: Biedt geabstraheerde helpers (`Type`, `Click`, `LogStep`) 
+ * die de directe driver-aanroepen vervangen en logging standaardiseren.
+ * ===================================================================================
+ */
+
 namespace Tests
 {
     // Alle setup-logica is hierheen verplaatst
-    public abstract class BaseTest 
+    public abstract class BaseTest
     {
         protected static readonly ILog log = LogManager.GetLogger(typeof(BaseTest));
-        
+
         protected IWebDriver _driver;
         protected WebDriverWait _wait;
         protected string _baseUrl;
@@ -27,7 +53,7 @@ namespace Tests
                 log.Warn("Selenium test skipped because SELENIUM_BASE_URL is not set.");
                 Assert.Ignore("Selenium test skipped because SELENIUM_BASE_URL is not set.");
             }
-            
+
             log.Info($"Test Suite initialized with base URL: {_baseUrl}");
         }
 
@@ -115,7 +141,7 @@ namespace Tests
             var element = FindWithWait(by);
             element.Clear();
             element.SendKeys(text);
-            
+
             LogStep($"Entered text: {text}");
         }
 

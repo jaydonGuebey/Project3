@@ -3,6 +3,25 @@ using OpenQA.Selenium;
 using System;
 using Tests; // Zorgt dat deze klasse de BaseTest kan vinden
 
+/*
+ * ===================================================================================
+ * RAPPORTAGE OVERZICHT (PT-1.1 Medicatieoverzicht)
+ * ===================================================================================
+ * Dit testbestand valideert de hoofdpagina van de patiënt 
+ * (Acceptance Criteria PT-1.1).
+ *
+ * Wat wordt gerapporteerd:
+ *
+ * 1. PT_1_1_1_ViewActualMedicationSchedule_Success (Happy Path):
+ * - Rapporteert of een patiënt met medicatie (patient) succesvol 
+ * zijn medicatieoverzicht (Panadol, Crestor) kan zien na inloggen.
+ *
+ * 2. PT_1_1_2_ViewEmptyMedicationSchedule_ShowsMessage (Unhappy Path):
+ * - Rapporteert of een patiënt *zonder* medicatie (patient2) 
+ * een duidelijke "geen voorschriften" melding te zien krijgt.
+ * ===================================================================================
+ */
+
 namespace Tests.Patient
 {
     [TestFixture]
@@ -16,9 +35,9 @@ namespace Tests.Patient
             log.Info("=== Starting PT-1.1.1: Inzien van het actuele medicatieschema ===");
 
             // Arrange
-            string username = "patient"; 
+            string username = "patient";
             string password = "Patient1";
-            
+
             // Testdata uit de HTML die je stuurde
             string expectedMed1_Name = "Panadol";
             string expectedMed1_Dose = "500mg";
@@ -35,17 +54,17 @@ namespace Tests.Patient
                 Type(By.Name("Password"), password, "Step 1: Entering password");
                 Click(By.Name("btn-login"), "Step 1: Clicking login button");
                 log.Info("Step 2 & 3: Verifying redirect to medication schedule");
-                
+
                 // Assert
                 LogStep("Step 5: Verifying medication details are visible on page load");
 
                 // Zoekt op class (Oplossing 2)
                 log.Info("Waiting for medication table body to load...");
-                FindWithWait(By.CssSelector(".table-striped tbody")); 
+                FindWithWait(By.CssSelector(".table-striped tbody"));
                 log.Info("Table body found.");
 
                 // Vindt de tabel op basis van zijn class-naam
-                var medicationContainer = FindWithWait(By.ClassName("table-striped")); 
+                var medicationContainer = FindWithWait(By.ClassName("table-striped"));
                 string containerText = medicationContainer.Text;
 
                 // Controleer de data
@@ -74,11 +93,11 @@ namespace Tests.Patient
             log.Info("=== Starting PT-1.1.2: Systeem toont melding bij geen medicatieschema ===");
 
             // Arrange
-            string username = "patient2"; 
+            string username = "patient2";
             string password = "Patient1"; // (Pas aan als het wachtwoord anders is)
-            
-            string expectedMessage = "You have no current prescriptions"; 
-            
+
+            string expectedMessage = "You have no current prescriptions";
+
             log.Info($"Test data - Username: {username}");
 
             try
@@ -99,10 +118,10 @@ namespace Tests.Patient
 
                 // Controleer de melding
                 Assert.That(messageElement.Displayed, Is.True, "Het 'geen medicatie' bericht is niet zichtbaar.");
-                Assert.That(messageElement.Text, Does.Contain(expectedMessage).IgnoreCase, 
+                Assert.That(messageElement.Text, Does.Contain(expectedMessage).IgnoreCase,
                     $"Verwachte tekst '{expectedMessage}' niet gevonden in de melding. Gevonden: '{messageElement.Text}'");
                 log.Info("✓ Assertion passed: Correct 'empty state' message is displayed.");
-                
+
                 // Controleer dat de tabel (met class 'table-striped') NIET bestaat
                 var tableElements = _driver.FindElements(By.ClassName("table-striped"));
                 Assert.That(tableElements.Count, Is.EqualTo(0), "Er werd een medicatietabel gevonden, maar er werd geen verwacht.");
