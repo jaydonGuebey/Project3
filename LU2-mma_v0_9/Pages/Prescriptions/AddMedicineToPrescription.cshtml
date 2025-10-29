@@ -1,0 +1,33 @@
+﻿@page
+@model Pages.Prescriptions.AddMedicineToPrescriptionModel
+@{
+    ViewData["Title"] = "Add Medicine to Prescription";
+}
+
+<h2>Add Medicine to Prescription</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Medicine</label>
+        <select asp-for="SelectedMedicineId" class="form-select">
+            <option value="">-- Select Medicine --</option>
+            @foreach (var med in Model.Medicines)
+            {
+                <option value="@med.MedicineID">@med.TradeName (@med.Strength)</option>
+            }
+        </select>
+        <span asp-validation-for="SelectedMedicineId" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Quantity</label>
+        <input asp-for="Quantity" type="number" min="1" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Instructions</label>
+        <input asp-for="Instructions" maxlength="300" class="form-control" />
+        <span asp-validation-for="Instructions" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" name="action" value="add">Add</button>
+    <button type="submit" class="btn btn-secondary" name="action" value="cancel">Cancel</button>
+</form>

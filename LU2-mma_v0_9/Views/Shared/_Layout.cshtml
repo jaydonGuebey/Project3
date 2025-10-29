@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LU2_software_testen</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LU2_software_testen.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LU2_software_testen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    @using LU2_software_testen.Models
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        <ul class="navbar-nav flex-grow-1">
+                            @if (User.IsInUserRole(UserRole.apothecary))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-page="/Medicine/Index" name="menu_medicine">Medicines</a>
+                                </li>
+                            }
+                            @if (User.IsInUserRole(UserRole.administrator))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-page="/Users/Index" name="menu_users">Users</a>
+                                </li>
+                            }
+                            @if (User.IsInUserRole(UserRole.generalPractitioner) || User.IsInUserRole(UserRole.specialist))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-page="/Prescriptions/Index" name="menu_prescriptions">Prescriptions</a>
+                                </li>
+                            }
+                            @if (User.IsInUserRole(UserRole.administrator))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-page="/LogFiles/Index" name="menu_log_files">Log files</a>
+                                </li>
+                            }
+                        </ul>
+                        <div>
+                            <form method="post" asp-page="/Account/Logout" class="d-inline">
+                                Logged in: <span name="user_name">@User.Identity.Name</span>
+                                <button type="submit" name="btn_logout" class="btn btn-link nav-link d-inline btn-outline-primary px-2 pt-1 ms-2" style="display:inline;vertical-align:middle;">Log Out</button>
+                            </form>
+                        </div>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted fixed-bottom">
+        <div class="container">
+            &copy; 2025 - LU2_software_testen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

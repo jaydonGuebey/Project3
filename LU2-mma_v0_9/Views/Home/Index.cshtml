@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var loginError = Context.Request.Query["loginError"] == "True";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+@if (!User.Identity?.IsAuthenticated ?? true)
+{
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">
+                        Login
+                    </h4>
+                    <form method="post" asp-page="/Account/Login">
+                        <div class="form-group mb-2">
+                            <label for="Username">Username</label>
+                            <input type="text" class="form-control" id="Username" name="Username" required />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" name="Password" required />
+                        </div>
+                        @if (loginError)
+                        {
+                            <p>
+                                <span id="login-error" class="text-danger ms-2">Username/password not recognized</span>
+                            </p>
+                        }
+                        <button name="btn-login" type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="mt-2 text-center">
+                        <a asp-page="/Account/Register" name="link-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var error = document.getElementById("login-error");
+            if (error) {
+                var clearError = function () { error.style.display = "none"; };
+                document.getElementById("Username").addEventListener("focus", clearError);
+                document.getElementById("Password").addEventListener("focus", clearError);
+            }
+        });
+    </script>
+}

@@ -1,0 +1,99 @@
+﻿@page
+@model Pages.LogFiles.IndexModel
+@{
+    ViewData["Title"] = "Log files";
+}
+
+<h2>Log files</h2>
+
+<div class="row mb-3">
+    <div class="col-md-6 position-relative">
+        <input type="text" class="form-control mb-2" id="logFileDropdown" placeholder="Type to filter log files..." autocomplete="off" oninput="showDropdown()" onfocus="showDropdown()" />
+        <div id="dropdownList" class="list-group position-absolute w-100" style="z-index:10; display:none; max-height:300px; overflow-y:auto;"></div>
+    </div>
+</div>
+
+<div style="position:relative;">
+    <button id="downloadBtn" class="btn btn-link p-0" style="position:absolute; top:8px; right:8px; z-index:2;" title="Download" disabled>
+        <span class="bi bi-download"></span> &#128190;
+    </button>
+    <textarea id="logContent"
+              class="form-control"
+              rows="20"
+              readonly
+              style="resize:none; height:calc(100vh - 260px); min-height:200px; margin-bottom:1rem; overflow-y:auto;"></textarea>
+</div>
+
+@section Scripts {
+<script>
+const allFiles = [
+    @foreach (var file in Model.LogFiles)
+    {
+        @: "@file",
+    }
+];
+
+let selectedFile = "";
+
+function showDropdown() {
+    const input = document.getElementById('logFileDropdown');
+    const dropdown = document.getElementById('dropdownList');
+    const filter = input.value.toLowerCase();
+    let filtered = allFiles.filter(f => f.toLowerCase().includes(filter));
+    dropdown.innerHTML = "";
+
+    let showCount = Math.min(filtered.length, 10);
+    for (let i = 0; i < showCount; i++) {
+        let item = document.createElement('button');
+        item.type = "button";
+        item.className = "list-group-item list-group-item-action";
+        item.textContent = filtered[i];
+        item.onclick = function() {
+            input.value = filtered[i];
+            selectedFile = filtered[i];
+            dropdown.style.display = "none";
+            loadLogFile(filtered[i]);
+        };
+        dropdown.appendChild(item);
+    }
+    if (filtered.length > 10) {
+        let ellipsis = document.createElement('div');
+        ellipsis.className = "list-group-item text-center text-muted";
+        ellipsis.textContent = "...";
+        dropdown.appendChild(ellipsis);
+    }
+    dropdown.style.display = filtered.length > 0 ? "block" : "none";
+
+    // If the input value does not match a file, disable download and clear textarea
+    if (!allFiles.includes(input.value)) {
+        document.getElementById('downloadBtn').disabled = true;
+        document.getElementById('logContent').value = "";
+        selectedFile = "";
+    }
+}
+
+function loadLogFile(fileName) {
+    fetch(`?handler=View&fileName=${encodeURIComponent(fileName)}`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('logContent').value = data;
+            document.getElementById('downloadBtn').disabled = false;
+            document.getElementById('downloadBtn').onclick = function() {
+                window.location = `?handler=Download&fileName=${encodeURIComponent(fileName)}`;
+            };
+        });
+}
+
+// Hide dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const input = document.getElementById('logFileDropdown');
+    const dropdown = document.getElementById('dropdownList');
+    if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.style.display = "none";
+    }
+});
+
+// Always show the textarea, even if no file is selected
+document.getElementById('logContent').value = "";
+</script>
+}

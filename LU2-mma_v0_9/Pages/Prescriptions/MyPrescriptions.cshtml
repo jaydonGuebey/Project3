@@ -1,0 +1,73 @@
+﻿@page
+@model Pages.Prescriptions.MyPrescriptionsModel
+@{
+    ViewData["Title"] = "My Current Prescriptions";
+}
+
+<h2>My Current Prescriptions</h2>
+
+@if (Model.CurrentPrescriptions.Any())
+{
+    <table class="table table-bordered">
+        <tbody>
+        @foreach (var p in Model.CurrentPrescriptions)
+        {
+            <tr>
+                <td>
+                    <table class="table table-striped mb-0">
+                        <thead>
+                            <tr>
+                                <th>Medicine</th>
+                                <th>Strength</th>
+                                <th>Instructions</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @{
+                            var meds = Model.Medicines.ContainsKey(p.Id) ? Model.Medicines[p.Id] : new List<Pages.Prescriptions.MyPrescriptionsModel.MedicineInfo>();
+                            int medCount = meds.Count;
+                            if (medCount == 0)
+                            {
+                                <tr>
+                                    <td colspan="3" class="text-muted">No medicines</td>
+                                    <td>@p.PrescriptionStartDate.ToShortDateString()</td>
+                                    <td>@p.PrescriptionEndDate.ToShortDateString()</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                for (int i = 0; i < medCount; i++)
+                                {
+                                    var med = meds[i];
+                                    <tr>
+                                        <td>@med.TradeName</td>
+                                        <td>@med.Strength</td>
+                                        <td>@med.Instructions</td>
+                                        @if (i == 0)
+                                        {
+                                            <td>@p.PrescriptionStartDate.ToShortDateString()</td>
+                                            <td>@p.PrescriptionEndDate.ToShortDateString()</td>
+                                        }
+                                        else
+                                        {
+                                            <td></td>
+                                            <td></td>
+                                        }
+                                    </tr>
+                                }
+                            }
+                        }
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">You have no current prescriptions.</div>
+}

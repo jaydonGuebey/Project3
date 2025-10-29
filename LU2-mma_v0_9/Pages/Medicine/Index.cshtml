@@ -1,0 +1,37 @@
+@page
+@model Pages.Medicine.IndexModel
+@{
+    ViewData["Title"] = "Medicines";
+}
+
+<h1>Medicines</h1>
+<a asp-page="Create" class="btn btn-primary mb-2">Create New Medicine</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Trade Name</th>
+            <th>Active Substances</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Medicines)
+    {
+        <tr>
+            <td>@item.MedicineID</td>
+            <td>@item.TradeName</td>
+            <td>@string.Join(", ", item.ActiveSubstances)</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@item.MedicineID" class="btn btn-sm btn-warning">Edit</a>
+                <a asp-page="Delete" asp-route-id="@item.MedicineID" class="btn btn-sm btn-danger">Delete</a>
+                <a asp-page="Details" asp-route-id="@item.MedicineID" class="btn btn-sm btn-info">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

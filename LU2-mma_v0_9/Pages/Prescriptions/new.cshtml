@@ -1,0 +1,105 @@
+﻿@page
+@model Pages.Prescriptions.NewModel
+@{
+    ViewData["Title"] = "New Prescription";
+}
+
+<h2>New Prescription</h2>
+
+<form method="post">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Prescription.PatientID" class="form-label">Patient</label>
+            <select asp-for="Prescription.PatientID" class="form-select" id="patientSelect" tabindex="1">
+                <option value="">-- Select Patient --</option>
+                @foreach (var patient in Model.Patients)
+                {
+                    <option value="@patient.UserID">@patient.Username (@patient.Email)</option>
+                }
+            </select>
+            <span asp-validation-for="Prescription.PatientID" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label asp-for="Prescription.PrescriptionStartDate" class="form-label"></label>
+            <input asp-for="Prescription.PrescriptionStartDate" type="date" class="form-control" tabindex="2" />
+            <span asp-validation-for="Prescription.PrescriptionStartDate" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label asp-for="Prescription.PrescriptionEndDate" class="form-label"></label>
+            <input asp-for="Prescription.PrescriptionEndDate" type="date" class="form-control" tabindex="3" />
+            <span asp-validation-for="Prescription.PrescriptionEndDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-outline-primary mb-3" asp-page-handler="AddMedicine" formnovalidate>
+        Add Medicine
+    </button>
+
+    @if (Model.AddedMedicines != null && Model.AddedMedicines.Any())
+    {
+        <div class="mb-3">
+            <h5>Medicines in this prescription:</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Trade Name</th>
+                        <th>Strength</th>
+                        <th>Quantity</th>
+                        <th>Instructions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var med in Model.AddedMedicines)
+                    {
+                        <tr>
+                            <td>@med.TradeName</td>
+                            <td>@med.Strength</td>
+                            <td>@med.Quantity</td>
+                            <td>@med.Instructions</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    <div class="mb-3">
+        <label asp-for="Prescription.Description" class="form-label"></label>
+        <textarea asp-for="Prescription.Description" class="form-control" tabindex="4" maxlength="500" rows="4" id="descBox" oninput="updateCharCount()"></textarea>
+        <div class="text-end"><span id="charCount">0</span>/500 characters</div>
+        <span asp-validation-for="Prescription.Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Prescription</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+<script>
+// Character counter for description
+function updateCharCount() {
+    var desc = document.getElementById('descBox');
+    var count = desc.value.length;
+    document.getElementById('charCount').textContent = count;
+}
+updateCharCount();
+
+// Always show all options (no filtering/hiding)
+document.getElementById('patientSelect').addEventListener('input', function () {
+    var options = this.options;
+    for (var i = 0; i < options.length; i++) {
+        options[i].style.display = '';
+    }
+});
+
+// Clear selection on Delete or Backspace key
+document.getElementById('patientSelect').addEventListener('keydown', function (e) {
+    if (e.key === "Delete" || e.key === "Backspace") {
+        this.selectedIndex = 0; // Reset to the placeholder
+        this.dispatchEvent(new Event('change'));
+        // Prevent default browser behavior (optional)
+        e.preventDefault();
+    }
+});
+</script>
+}

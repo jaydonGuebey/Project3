@@ -1,0 +1,55 @@
+@page "{id:int}"
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Medicine";
+}
+
+<h2>Edit Medicine</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Medicine.MedicineID" />
+    <input type="hidden" asp-for="Medicine.StockStatus" />
+    <div class="mb-3">
+        <label asp-for="Medicine.TradeName" class="form-label"></label>
+        <input asp-for="Medicine.TradeName" class="form-control" />
+        <span asp-validation-for="Medicine.TradeName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Medicine.ActiveSubstances" class="form-label">Active Substances (comma-separated)</label>
+        <input type="text" class="form-control" name="Medicine.ActiveSubstances"
+               value="@string.Join(", ", Model.Medicine.ActiveSubstances ?? new List<string>())" />
+        <span asp-validation-for="Medicine.ActiveSubstances" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Medicine.DosageForm" class="form-label"></label>
+        <select asp-for="Medicine.DosageForm" class="form-select">
+            @foreach (var form in Model.AllDosageForms)
+            {
+                if (Model.Medicine.DosageForm == form)
+                {
+                    <option value="@form" selected>
+                        @form
+                    </option>
+                }
+                else
+                {
+                    <option value="@form">
+                        @form
+                    </option>
+                }
+            }
+        </select>
+        <span asp-validation-for="Medicine.DosageForm" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Medicine.Strength" class="form-label"></label>
+        <input asp-for="Medicine.Strength" class="form-control" />
+        <span asp-validation-for="Medicine.Strength" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

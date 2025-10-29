@@ -1,0 +1,25 @@
+@page
+@model Pages.Medicine.CreateModel
+@{
+    ViewData["Title"] = "Create Medicine";
+}
+
+<h1>Create Medicine</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Medicine.TradeName"></label>
+        <input asp-for="Medicine.TradeName" class="form-control" />
+        <span asp-validation-for="Medicine.TradeName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ActiveSubstancesInput">Active Substances (comma separated)</label>
+        <input asp-for="ActiveSubstancesInput" class="form-control" />
+        <span asp-validation-for="ActiveSubstancesInput" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
