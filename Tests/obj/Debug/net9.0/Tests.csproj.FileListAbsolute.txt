@@ -291,3 +291,4 @@ C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\De
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.pdb
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.genruntimeconfig.cache
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\ref\Tests.dll
+C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.sourcelink.json

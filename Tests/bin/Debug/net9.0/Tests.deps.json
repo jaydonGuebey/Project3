@@ -15,7 +15,8 @@
           "Selenium.Support": "4.37.0",
           "Selenium.WebDriver": "4.37.0",
           "Selenium.WebDriver.ChromeDriver": "141.0.7390.7800",
-          "coverlet.collector": "6.0.0"
+          "coverlet.collector": "6.0.0",
+          "log4net": "3.2.0"
         },
         "runtime": {
           "Tests.dll": {}
