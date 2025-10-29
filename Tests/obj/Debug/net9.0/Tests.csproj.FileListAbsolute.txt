@@ -285,7 +285,6 @@ C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\De
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.AssemblyInfoInputs.cache
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.AssemblyInfo.cs
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.csproj.CoreCompileInputs.cache
-C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.sourcelink.json
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.csproj.Up2Date
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\Tests.dll
 C:\Users\jaydo\OneDrive - Avans Hogeschool\290IN3SOh\Testen\Project\Tests\obj\Debug\net9.0\refint\Tests.dll

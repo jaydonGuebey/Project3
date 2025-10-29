@@ -7902,3 +7902,40 @@ from disconnected: unable to send message to renderer
 2025-10-29 12:29:40,102 [NonParallelWorker] INFO  TestSetup - ==========================================
 2025-10-29 12:29:40,102 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
 2025-10-29 12:29:40,102 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:27:38,829 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:27:38,847 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 15:27:38,848 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:27:38,850 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 15:27:40,557 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 15:27:44,954 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 15:27:44,958 [NonParallelWorker] INFO  Tests.BaseTest - === Starting PT-1.1.1: Inzien van het actuele medicatieschema ===
+2025-10-29 15:27:44,959 [NonParallelWorker] INFO  Tests.BaseTest - Test data - Username: patient
+2025-10-29 15:27:44,960 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 15:27:45,461 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 15:27:45,488 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Entering username
+2025-10-29 15:27:45,665 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: patient
+2025-10-29 15:27:45,665 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Entering password
+2025-10-29 15:27:45,814 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: Patient1
+2025-10-29 15:27:45,818 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Clicking login button
+2025-10-29 15:27:47,000 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 15:27:47,001 [NonParallelWorker] INFO  Tests.BaseTest - Step 2 & 3: Verifying redirect to medication schedule
+2025-10-29 15:27:47,001 [NonParallelWorker] INFO  Tests.BaseTest - Step 5: Verifying medication details are visible on page load
+2025-10-29 15:27:47,002 [NonParallelWorker] INFO  Tests.BaseTest - Waiting for medication table body to load...
+2025-10-29 15:27:47,020 [NonParallelWorker] INFO  Tests.BaseTest - Table body found.
+2025-10-29 15:27:47,061 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertion passed: Correct medication, dose, and times are displayed.
+2025-10-29 15:27:47,061 [NonParallelWorker] INFO  Tests.BaseTest - === PT-1.1.1 PASSED ===
+2025-10-29 15:27:47,063 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 15:27:47,241 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 15:27:48,798 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 15:27:48,799 [NonParallelWorker] INFO  Tests.BaseTest - === Starting PT-1.1.2: Systeem toont melding bij geen medicatieschema ===
+2025-10-29 15:27:48,799 [NonParallelWorker] INFO  Tests.BaseTest - Test data - Username: patient2
+2025-10-29 15:27:48,799 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 15:27:48,959 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 15:27:48,959 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Entering username (Patient2)
+2025-10-29 15:27:49,201 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: patient2
+2025-10-29 15:27:49,201 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Entering password
+2025-10-29 15:27:49,373 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: Patient1
+2025-10-29 15:27:49,373 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Clicking login button
+2025-10-29 15:27:49,555 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 15:27:49,555 [NonParallelWorker] INFO  Tests.BaseTest - Step 2: Verifying redirect to medication schedule page
+2025-10-29 15:27:49,555 [NonParallelWorker] INFO  Tests.BaseTest - Step 3: Observing system response for empty state
