@@ -8476,3 +8476,541 @@ from disconnected: unable to send message to renderer
 2025-10-29 15:42:52,412 [NonParallelWorker] INFO  TestSetup - ==========================================
 2025-10-29 15:42:52,412 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
 2025-10-29 15:42:52,412 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:56:56,992 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:56:57,001 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 15:56:57,002 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:56:57,003 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 15:56:57,010 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 15:56:58,105 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 15:56:58,109 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.1.1: Toekennen van rol 'specialist' aan gebruiker 'Patient' ===
+2025-10-29 15:56:58,110 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 15:56:58,111 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 15:56:58,480 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 15:56:58,501 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 15:56:58,662 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 15:56:58,663 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 15:56:58,806 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 15:56:58,807 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 15:56:58,893 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 15:56:58,981 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to User Management...
+2025-10-29 15:56:59,083 [NonParallelWorker] INFO  Tests.BaseTest - Targeting user row for: Patient
+2025-10-29 15:56:59,115 [NonParallelWorker] INFO  Tests.BaseTest - Selecting role 'specialist' from the dropdown.
+2025-10-29 15:56:59,189 [NonParallelWorker] INFO  Tests.BaseTest - Clicking 'Change' button to save the new role.
+2025-10-29 15:56:59,372 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced submit/click).
+2025-10-29 15:56:59,372 [NonParallelWorker] INFO  Tests.BaseTest - Waiting for success message...
+2025-10-29 15:57:09,424 [NonParallelWorker] ERROR Tests.BaseTest - BE-1.1.1 FAILED: Timed out after 10 seconds
+2025-10-29 15:57:09,522 [NonParallelWorker] INFO  Tests.BaseTest - Screenshot saved: BE_1_1_1_Failed_20251029_155709.png
+2025-10-29 15:57:09,534 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 15:57:09,732 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 15:57:09,732 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 15:57:09,732 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:00:53,483 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:00:53,491 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:00:53,491 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:00:53,492 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:00:53,498 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:00:54,405 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:00:54,407 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.1.1: Toekennen van rol 'specialist' aan gebruiker 'Patient' ===
+2025-10-29 16:00:54,408 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:00:54,408 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:00:54,613 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:00:54,629 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:00:54,750 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:00:54,750 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:00:54,851 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:00:54,852 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:00:54,965 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:00:55,006 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to User Management...
+2025-10-29 16:00:55,084 [NonParallelWorker] INFO  Tests.BaseTest - Targeting user row for: Patient
+2025-10-29 16:00:55,137 [NonParallelWorker] INFO  Tests.BaseTest - Selecting role 'specialist' from the dropdown.
+2025-10-29 16:00:55,187 [NonParallelWorker] INFO  Tests.BaseTest - Clicking 'Change' button to save the new role.
+2025-10-29 16:00:55,274 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced submit/click).
+2025-10-29 16:00:55,274 [NonParallelWorker] INFO  Tests.BaseTest - Refreshing page to check if role change is persistent...
+2025-10-29 16:00:55,342 [NonParallelWorker] INFO  Tests.BaseTest - Verifying new role is selected in the dropdown after explicit refresh...
+2025-10-29 16:00:55,363 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertion passed: Rol 'specialist' is succesvol en persistent toegekend.
+2025-10-29 16:00:55,364 [NonParallelWorker] INFO  Tests.BaseTest - === BE-1.1.1 PASSED: Rol succesvol en persistent toegekend ===
+2025-10-29 16:00:55,364 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:00:55,520 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:00:55,520 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:00:55,520 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:06:32,700 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:06:32,706 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:06:32,706 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:06:32,707 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:06:32,713 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:06:33,567 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:06:33,568 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.3.1: Verifiëren rechten 'Patiënt' rol (Least Privilege) ===
+2025-10-29 16:06:33,569 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Patiënt user: patient
+2025-10-29 16:06:33,569 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:06:33,738 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:06:33,750 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (patient)
+2025-10-29 16:06:33,864 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: patient
+2025-10-29 16:06:33,864 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:06:33,942 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: Patient1
+2025-10-29 16:06:33,943 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:06:34,007 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:06:34,207 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /Prescriptions/MyPrescriptions
+2025-10-29 16:06:34,802 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Toegang tot eigen dossier geslaagd.
+2025-10-29 16:06:34,802 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /Dossiers/PAT-456
+2025-10-29 16:06:35,399 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Poging om ander dossier te openen resulteerde in blokkade/redirect.
+2025-10-29 16:06:35,399 [NonParallelWorker] INFO  Tests.BaseTest - Stap 6: Controleer of het 'Gebruikersbeheer' menu NIET zichtbaar is.
+2025-10-29 16:06:45,438 [NonParallelWorker] INFO  Tests.BaseTest - ✓ 'Gebruikersbeheer' menu is niet zichtbaar.
+2025-10-29 16:06:45,438 [NonParallelWorker] INFO  Tests.BaseTest - === BE-1.3.1 PASSED: Patiënt rol is correct beperkt ===
+2025-10-29 16:06:45,439 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:06:45,628 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:06:45,629 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:06:45,629 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:07:08,714 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:07:08,722 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:07:08,722 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:07:08,724 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:07:08,730 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:07:09,718 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:07:09,721 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.3.2: Verifiëren dat 'Apotheker' geen 'Arts' rechten heeft ===
+2025-10-29 16:07:09,721 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Apotheker user: apothecary
+2025-10-29 16:07:09,722 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:07:09,915 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:07:09,939 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (apothecary)
+2025-10-29 16:07:10,129 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary
+2025-10-29 16:07:10,129 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:07:10,274 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary1
+2025-10-29 16:07:10,274 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:07:10,401 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:07:10,442 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /Prescriptions
+2025-10-29 16:07:11,046 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Toegang tot Medicatieoverzicht (Index) is geslaagd.
+2025-10-29 16:07:11,046 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Controleer of de 'Nieuw voorschrift' link NIET zichtbaar is.
+2025-10-29 16:07:11,082 [NonParallelWorker] ERROR Tests.BaseTest - BE-1.3.2 FAILED:   FAILURE: De 'Nieuw voorschrift' knop is zichtbaar voor de Apotheker (heeft onterecht Arts rechten).
+  Expected: 0
+  But was:  1
+
+2025-10-29 16:07:11,085 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:07:11,211 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:07:11,211 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:07:11,211 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:08,463 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:08,471 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:08:08,472 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:08,473 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:08:08,479 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:08:09,448 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:08:09,451 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.3.2: Verifiëren dat 'Apotheker' geen 'Arts' rechten heeft ===
+2025-10-29 16:08:09,452 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Apotheker user: apothecary
+2025-10-29 16:08:09,452 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:08:09,666 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:08:09,689 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (apothecary)
+2025-10-29 16:08:09,868 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary
+2025-10-29 16:08:09,869 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:08:09,995 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary1
+2025-10-29 16:08:09,995 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:08:10,100 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:08:10,140 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /Prescriptions
+2025-10-29 16:08:10,739 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Toegang tot Medicatieoverzicht (Index) is geslaagd.
+2025-10-29 16:08:10,739 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Controleer of de 'Nieuw voorschrift' link NIET zichtbaar is.
+2025-10-29 16:08:10,782 [NonParallelWorker] ERROR Tests.BaseTest - BE-1.3.2 FAILED:   FAILURE: De 'Nieuw voorschrift' knop is zichtbaar voor de Apotheker (heeft onterecht Arts rechten).
+  Expected: 0
+  But was:  1
+
+2025-10-29 16:08:10,786 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:08:10,956 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:10,956 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:08:10,956 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:17,182 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:17,197 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:08:17,197 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:17,198 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:08:17,205 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:08:18,113 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:08:18,116 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-1.3.2: Verifiëren dat 'Apotheker' geen 'Arts' rechten heeft ===
+2025-10-29 16:08:18,116 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Apotheker user: apothecary
+2025-10-29 16:08:18,117 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:08:18,301 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:08:18,320 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (apothecary)
+2025-10-29 16:08:18,469 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary
+2025-10-29 16:08:18,469 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:08:18,587 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: apothecary1
+2025-10-29 16:08:18,588 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:08:18,672 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:08:18,739 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /Prescriptions
+2025-10-29 16:08:19,333 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Toegang tot Medicatieoverzicht (Index) is geslaagd.
+2025-10-29 16:08:19,334 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Controleer of de 'Nieuw voorschrift' link NIET zichtbaar is.
+2025-10-29 16:08:19,377 [NonParallelWorker] ERROR Tests.BaseTest - BE-1.3.2 FAILED:   FAILURE: De 'Nieuw voorschrift' knop is zichtbaar voor de Apotheker (heeft onterecht Arts rechten).
+  Expected: 0
+  But was:  1
+
+2025-10-29 16:08:19,380 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:08:19,534 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:08:19,534 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:08:19,534 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:27:51,952 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:27:51,959 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:27:51,959 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:27:51,960 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:27:51,966 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:27:53,402 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:27:53,404 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.2.1: Verifiëren dat rolwijziging een logregel genereert ===
+2025-10-29 16:27:53,405 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:27:53,405 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:27:53,592 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:27:53,604 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:27:53,702 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:27:53,702 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:27:53,777 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:27:53,778 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:27:54,993 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:27:55,005 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles om initiële loginhoud op te slaan.
+2025-10-29 16:27:55,091 [NonParallelWorker] INFO  Tests.BaseTest - Initiële loginhoud opgeslagen. Lengte: 118.
+2025-10-29 16:27:55,091 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to User Management...
+2025-10-29 16:27:55,304 [NonParallelWorker] INFO  Tests.BaseTest - Wisselen van rol van 'patient' naar 'specialist'.
+2025-10-29 16:27:55,360 [NonParallelWorker] INFO  Tests.BaseTest - Clicking 'Change' button to save the new role.
+2025-10-29 16:27:55,584 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced submit/click).
+2025-10-29 16:27:55,592 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren terug naar /LogFiles om de nieuwe inhoud te valideren.
+2025-10-29 16:27:55,645 [NonParallelWorker] INFO  Tests.BaseTest - Nieuwe loginhoud opgeslagen. Lengte: 118.
+2025-10-29 16:27:55,663 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.2.1 FAILED:   FAILURE: De lengte van de loginhoud is NIET toegenomen. Dit suggereert dat er geen nieuwe logregel is aangemaakt.
+  Expected: greater than 118
+  But was:  118
+
+2025-10-29 16:27:55,728 [NonParallelWorker] INFO  Tests.BaseTest - Screenshot saved: BE_2_2_1_Failed_20251029_162755.png
+2025-10-29 16:27:55,732 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:27:55,854 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:27:55,854 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:27:55,854 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:15,500 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:15,507 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:32:15,507 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:15,508 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:32:15,513 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:32:16,399 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:32:16,401 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.2.1: Verifiëren dat rolwijziging een logregel genereert via de logviewer ===
+2025-10-29 16:32:16,402 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:32:16,402 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:32:16,661 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:32:16,678 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:32:16,787 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:32:16,787 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:32:16,866 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:32:16,866 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:32:16,926 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:32:16,931 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles om initiële loginhoud te tellen.
+2025-10-29 16:32:24,043 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.2.1 FAILED: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:32:24,125 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: invalid session id
+2025-10-29 16:32:24,134 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:32:24,151 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:24,152 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:32:24,152 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:28,074 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:28,083 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:32:28,083 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:28,085 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:32:28,092 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:32:28,934 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:32:28,936 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.2.1: Verifiëren dat rolwijziging een logregel genereert via de logviewer ===
+2025-10-29 16:32:28,936 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:32:28,936 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:32:29,030 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:32:29,044 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:32:29,148 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:32:29,149 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:32:29,223 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:32:29,224 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:32:29,284 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:32:29,334 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles om initiële loginhoud te tellen.
+2025-10-29 16:32:29,560 [NonParallelWorker] INFO  Tests.BaseTest - Logbestand 'log_20251029.txt' geselecteerd. Initiële regels: 15.
+2025-10-29 16:32:29,561 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to User Management...
+2025-10-29 16:32:29,691 [NonParallelWorker] INFO  Tests.BaseTest - Wisselen van rol van 'specialist' naar 'patient'.
+2025-10-29 16:32:29,728 [NonParallelWorker] INFO  Tests.BaseTest - Clicking 'Change' button to save the new role.
+2025-10-29 16:32:29,832 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced submit/click).
+2025-10-29 16:32:29,840 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren terug naar /LogFiles en selecteer 'log_20251029.txt' opnieuw.
+2025-10-29 16:32:30,046 [NonParallelWorker] INFO  Tests.BaseTest - Nieuwe regels geteld: 16.
+2025-10-29 16:32:30,072 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.2.1 FAILED:   FAILURE: De logregel bevat niet de verwachte details over de rolwijziging.
+  Expected: String containing "7" and String containing "patient" and String containing "Changed role"
+  But was:  "15:40:06: UserID 15: Prescription 27 was created for 7
+15:42:52: UserID 15: Prescription 28 was created for 7
+15:56:59: UserID 6: Role of 7 was changed from patient to specialist
+15:57:29: UserID 6: Role of 7 was changed from specialist to generalPractitioner
+15:57:32: UserID 6: Role of 7 was changed from generalPractitioner to specialist
+15:58:21: UserID 6: Role of 7 was changed from specialist to patient
+16:00:55: UserID 6: Role of 7 was changed from patient to specialist
+16:01:06: UserID 6: Role of 7 was changed from specialist to patient
+16:11:23: UserID 6: Role of 7 was changed from patient to administrator
+16:11:34: UserID 6: Role of 7 was changed from administrator to patient
+16:13:14: UserID 6: Role of 7 was changed from patient to healthInsurer
+16:13:16: UserID 6: Role of 7 was changed from healthInsurer to patient
+16:13:18: UserID 6: Role of 7 was changed from patient to healthInsurer
+16:13:20: UserID 6: Role of 7 was changed from healthInsurer to patient
+16:27:55: UserID 6: Role of 7 was changed from patient to specialist
+16:32:29: UserID 6: Role of 7 was changed from specialist to patient
+"
+
+2025-10-29 16:32:30,173 [NonParallelWorker] INFO  Tests.BaseTest - Screenshot saved: BE_2_2_1_Failed_20251029_163230.png
+2025-10-29 16:32:30,177 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:32:30,314 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:32:30,314 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:32:30,314 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:33:19,240 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:33:19,247 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:33:19,247 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:33:19,249 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:33:19,254 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:33:20,055 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:33:20,058 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.2.1: Verifiëren dat rolwijziging een logregel genereert via de logviewer ===
+2025-10-29 16:33:20,059 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:33:20,059 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:33:20,290 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:33:20,303 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:33:20,423 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:33:20,424 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:33:20,510 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:33:20,511 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:33:20,662 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:33:20,670 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles om initiële loginhoud te tellen.
+2025-10-29 16:33:20,969 [NonParallelWorker] INFO  Tests.BaseTest - Logbestand 'log_20251029.txt' geselecteerd. Initiële regels: 16.
+2025-10-29 16:33:20,970 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to User Management...
+2025-10-29 16:33:21,108 [NonParallelWorker] INFO  Tests.BaseTest - Wisselen van rol van 'patient' naar 'specialist'.
+2025-10-29 16:33:21,146 [NonParallelWorker] INFO  Tests.BaseTest - Clicking 'Change' button to save the new role.
+2025-10-29 16:33:21,196 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced submit/click).
+2025-10-29 16:33:21,227 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren terug naar /LogFiles en selecteer 'log_20251029.txt' opnieuw.
+2025-10-29 16:33:21,450 [NonParallelWorker] INFO  Tests.BaseTest - Nieuwe regels geteld: 17.
+2025-10-29 16:33:21,456 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertie geslaagd: Exact één nieuwe logregel is toegevoegd. Logging werkt.
+2025-10-29 16:33:21,456 [NonParallelWorker] INFO  Tests.BaseTest - === BE-2.2.1 PASSED: Rolwijziging genereert een logregel ===
+2025-10-29 16:33:21,457 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:33:21,598 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:33:21,598 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:33:21,598 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:07,074 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:07,081 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:42:07,082 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:07,083 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:42:07,089 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:42:08,000 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:42:08,003 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.3.2: Succesvolle download van TXT logbestand ===
+2025-10-29 16:42:08,004 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:42:08,004 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:42:08,222 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:42:08,237 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:42:08,337 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:42:08,337 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:42:08,410 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:42:08,411 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:42:08,502 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:42:08,535 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles.
+2025-10-29 16:42:08,602 [NonParallelWorker] INFO  Tests.BaseTest - Stap 3: Selecteer het eerste logbestand via de dropdown.
+2025-10-29 16:42:09,239 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Klikken op de 'Download' (TXT) knop.
+2025-10-29 16:42:09,239 [NonParallelWorker] INFO  Tests.BaseTest - Activeren van de TXT download.
+2025-10-29 16:42:09,265 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced click).
+2025-10-29 16:42:20,316 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertion passed: De TXT download is succesvol getriggerd zonder runtime fouten.
+2025-10-29 16:42:20,316 [NonParallelWorker] INFO  Tests.BaseTest - === BE-2.3.2 PASSED: Download functionaliteit is getriggerd ===
+2025-10-29 16:42:20,317 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:42:20,449 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:20,449 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:42:20,450 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:53,375 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:53,382 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:42:53,382 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:42:53,383 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:42:53,388 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:42:54,256 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:42:54,258 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.3.2: Succesvolle download van TXT logbestand ===
+2025-10-29 16:42:54,259 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:42:54,259 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:42:54,396 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:42:54,409 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:42:54,520 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:42:54,520 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:42:54,601 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:42:54,601 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:42:54,690 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:42:54,729 [NonParallelWorker] INFO  Tests.BaseTest - Navigeren naar /LogFiles.
+2025-10-29 16:42:54,823 [NonParallelWorker] INFO  Tests.BaseTest - Stap 3: Selecteer het eerste logbestand via de dropdown.
+2025-10-29 16:42:55,968 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Klikken op de 'Download' (TXT) knop.
+2025-10-29 16:42:55,968 [NonParallelWorker] INFO  Tests.BaseTest - Activeren van de TXT download.
+2025-10-29 16:42:56,000 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element via JavaScript (forced click).
+2025-10-29 16:43:06,211 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertion passed: De TXT download is succesvol getriggerd zonder runtime fouten.
+2025-10-29 16:43:06,212 [NonParallelWorker] INFO  Tests.BaseTest - === BE-2.3.2 PASSED: Download functionaliteit is getriggerd ===
+2025-10-29 16:43:06,213 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:43:06,360 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:43:06,361 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:43:06,361 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:17,427 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:17,434 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:48:17,435 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:17,436 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:48:17,441 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:48:18,336 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:48:18,338 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.1: Geautoriseerde beheerder (Admin) heeft toegang tot logs ===
+2025-10-29 16:48:18,338 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Admin user: admin
+2025-10-29 16:48:18,339 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:48:18,489 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:48:18,504 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (admin)
+2025-10-29 16:48:18,604 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin
+2025-10-29 16:48:18,604 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:48:18,701 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: admin1
+2025-10-29 16:48:18,702 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:48:18,778 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:48:18,817 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Zoek naar 'Audittrail' menu item.
+2025-10-29 16:48:18,947 [NonParallelWorker] INFO  Tests.BaseTest - Stap 4: Controleer of de logviewer elementen geladen zijn.
+2025-10-29 16:48:18,974 [NonParallelWorker] INFO  Tests.BaseTest - ✓ Assertion passed: Audittrail pagina is succesvol geladen en toont logbestanden.
+2025-10-29 16:48:18,974 [NonParallelWorker] INFO  Tests.BaseTest - === BE-2.4.1 PASSED: Positieve toegangscontrole is OK ===
+2025-10-29 16:48:18,975 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:48:19,113 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:48:20,405 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:48:20,406 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:48:20,406 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:48:20,406 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:48:20,507 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:48:20,507 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:48:20,687 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:48:20,687 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:48:20,785 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:48:20,785 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:48:20,857 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:48:20,890 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:48:23,481 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:48:23,547 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: invalid session id
+2025-10-29 16:48:23,552 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:48:23,563 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:23,563 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:48:23,563 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:27,742 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:27,750 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:48:27,750 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:27,751 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:48:27,757 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:48:28,612 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:48:28,614 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:48:28,614 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:48:28,614 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:48:28,709 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:48:28,720 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:48:28,842 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:48:28,842 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:48:28,931 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:48:28,931 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:48:28,982 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:48:29,061 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:48:39,117 [NonParallelWorker] INFO  Tests.BaseTest - ✓ 'Audittrail' menu is niet zichtbaar.
+2025-10-29 16:48:39,117 [NonParallelWorker] INFO  Tests.BaseTest - Stap 3: Probeer de directe URL /LogFiles te benaderen.
+2025-10-29 16:48:39,117 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /LogFiles
+2025-10-29 16:48:42,581 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:42,587 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:48:42,587 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:42,589 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:48:42,594 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:48:43,469 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:48:43,470 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:48:43,471 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:48:43,472 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:48:46,387 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:48:46,402 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:48:56,614 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: Timed out after 10 seconds
+2025-10-29 16:48:56,616 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:48:56,623 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:48:56,677 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:56,678 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:48:56,678 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:59,728 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:59,735 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:48:59,736 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:48:59,737 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:48:59,742 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:49:00,589 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:49:00,591 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:49:00,592 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:49:00,592 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:49:00,838 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:49:00,850 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:49:00,950 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:49:00,950 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:49:01,032 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:49:01,032 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:49:01,094 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:49:02,342 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:49:05,300 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:49:05,376 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: invalid session id
+2025-10-29 16:49:05,384 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:49:05,403 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:05,403 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:49:05,403 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:13,829 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:13,835 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:49:13,835 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:13,836 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:49:13,842 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:49:14,710 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:49:14,711 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:49:14,712 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:49:14,712 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:49:14,802 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:49:14,814 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:49:14,920 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:49:14,920 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:49:14,999 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:49:14,999 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:49:15,057 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:49:15,095 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:49:18,397 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:49:18,453 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: invalid session id
+2025-10-29 16:49:18,461 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:49:18,479 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:18,479 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:49:18,479 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:22,162 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:22,169 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:49:22,169 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:22,169 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:49:22,175 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:49:23,039 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:49:23,041 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:49:23,041 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:49:23,041 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:49:23,127 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:49:23,138 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:49:23,231 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:49:23,231 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:49:23,302 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:49:23,302 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:49:23,358 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:49:23,460 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:49:33,512 [NonParallelWorker] INFO  Tests.BaseTest - ✓ 'Audittrail' menu is niet zichtbaar.
+2025-10-29 16:49:33,512 [NonParallelWorker] INFO  Tests.BaseTest - Stap 3: Probeer de directe URL /LogFiles te benaderen.
+2025-10-29 16:49:33,512 [NonParallelWorker] INFO  Tests.BaseTest - Navigating to: /LogFiles
+2025-10-29 16:49:44,343 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: Timed out after 10 seconds
+2025-10-29 16:49:44,420 [NonParallelWorker] INFO  Tests.BaseTest - Screenshot saved: BE_2_4_2_Failed_20251029_164944.png
+2025-10-29 16:49:44,429 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:49:44,579 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:44,579 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:49:44,579 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:48,056 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:48,063 [NonParallelWorker] INFO  TestSetup - Test Run Gestart. Log4Net geconfigureerd.
+2025-10-29 16:49:48,063 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:48,064 [NonParallelWorker] INFO  Tests.BaseTest - Test Suite initialized with base URL: http://localhost:5070
+2025-10-29 16:49:48,070 [NonParallelWorker] INFO  Tests.BaseTest - Setting up Chrome WebDriver
+2025-10-29 16:49:49,001 [NonParallelWorker] INFO  Tests.BaseTest - Chrome WebDriver setup complete
+2025-10-29 16:49:49,003 [NonParallelWorker] INFO  Tests.BaseTest - === Starting BE-2.4.2: Ongeautoriseerde gebruiker (Zorgverzekeraar) heeft geen toegang tot logs ===
+2025-10-29 16:49:49,003 [NonParallelWorker] INFO  Tests.BaseTest - Logging in as Zorgverzekeraar user: healthinsurer
+2025-10-29 16:49:49,003 [NonParallelWorker] INFO  Tests.BaseTest - Step 1: Navigating to login page: http://localhost:5070
+2025-10-29 16:49:49,127 [NonParallelWorker] INFO  Tests.BaseTest - Successfully navigated to login page
+2025-10-29 16:49:49,145 [NonParallelWorker] INFO  Tests.BaseTest - Entering username (healthinsurer)
+2025-10-29 16:49:49,301 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer
+2025-10-29 16:49:49,301 [NonParallelWorker] INFO  Tests.BaseTest - Entering password
+2025-10-29 16:49:49,402 [NonParallelWorker] INFO  Tests.BaseTest - Entered text: healthinsurer1
+2025-10-29 16:49:49,402 [NonParallelWorker] INFO  Tests.BaseTest - Clicking login button
+2025-10-29 16:49:49,475 [NonParallelWorker] INFO  Tests.BaseTest - Clicked element
+2025-10-29 16:49:49,534 [NonParallelWorker] INFO  Tests.BaseTest - Stap 2: Controleer of het 'Audittrail' menu-item NIET zichtbaar is.
+2025-10-29 16:49:58,852 [NonParallelWorker] ERROR Tests.BaseTest - BE-2.4.2 FAILED: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.123)
+2025-10-29 16:49:58,925 [NonParallelWorker] ERROR Tests.BaseTest - Failed to take screenshot: invalid session id
+2025-10-29 16:49:58,934 [NonParallelWorker] INFO  Tests.BaseTest - Tearing down Chrome WebDriver
+2025-10-29 16:49:58,951 [NonParallelWorker] INFO  TestSetup - ==========================================
+2025-10-29 16:49:58,952 [NonParallelWorker] INFO  TestSetup - Test Run Voltooid.
+2025-10-29 16:49:58,952 [NonParallelWorker] INFO  TestSetup - ==========================================
