@@ -37,7 +37,7 @@ namespace Tests
             log.Info("Setting up Chrome WebDriver");
 
             var options = new ChromeOptions();
-            var headlessEnv = Environment.GetEnvironmentVariable("SELENIUM_HEADLESS") ?? "false";
+            var headlessEnv = Environment.GetEnvironmentVariable("SELENIUM_HEADLESS") ?? "true";
             var headless = headlessEnv.Equals("true", StringComparison.OrdinalIgnoreCase);
 
             if (headless)
